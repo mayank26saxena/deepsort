@@ -2,18 +2,22 @@
 A recurrent neural network based sorting algorithm.
 
 ## How it works?
-RNNs can compute any arbitrary function, given finite resources since they are "Turing Complete" machines. I have used a sequence to sequence (seq2seq) based neural network model. Such a model has been chosen, since, in this case, the input and output are both sequences. Input being unsorted sequence of integers and the output being the sorted sequence of the corresponding input. 
+RNNs can compute any arbitrary function, given finite resources since they are "Turing Complete" machines. I have used a sequence to sequence (seq2seq) based neural network model. I have chosen this model since, both the input and output are sequences. Input being unsorted sequence of integers and the output being the sorted sequence of integers. 
 
-I achieved 99.5% after 50,000 epochs. 
+I achieved 99.5% accuracy after 50,000 epochs. 
 
 ## Results
-For the purpose of comparing the performance (in terms of time taken to sort the sequence) of this algorithm, I have considered that the input sequence will be of length = 15 and that the maximum number in this sequence will be <= 100. The average time is calculated by finding the average of the time taken to sort 10,000 of such random arrays (of length 15 and range between [0, 100]). 
+For the purpose of evaluating the performance (in terms of correct predictions) of this algorithm, I have considered that the input sequence will be of length = 15 and that the maximum number in this sequence will be <= 100. The success rate is evaluated as (number of correct predictions)/(number of trials). 
 
-| Algorithm       | Complexity   | Average time | 
-| -------------   | ------------ | ------------ |
-| Bubble Sort     | O(n^2)       |              |
-| Merge Sort      | O(nlog(n))   |              |
-| Deep Sort       |              |              |
+| Number of Trials | Success Rate | 
+| ------------     | ------------ |
+| 100              | 97%          |
+| 1000             | 96%          |
+| 10000            | 95%          |
+
+## Screenshots 
+Below is an example of sorting using deepsort -
+![alt text](https://github.com/mayank26saxena/deepsort/blob/master/images/epochs-and-accuracy-.png)
 
 ## To Do
 - [ ] Convert into a Python package. 
