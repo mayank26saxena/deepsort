@@ -20,9 +20,9 @@ Below is an example of sorting using deepsort -
 ![alt text](https://github.com/mayank26saxena/deepsort/blob/master/images/epochs-and-accuracy-.png)
 
 ## To Do
-- [ ] Convert into a Python package. 
 - [ ] Try with different sequence lengths and max number. 
 - [ ] Add plots. 
+- [ ] Compare average running time with other sorting algorithms. 
 
 ## Contributions 
 All patches are welcome!
